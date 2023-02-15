@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Blog Website</title>
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Nav -->
+        <div class="nav container">
+            <!-- Logo -->
+            <a href="#" class="logo">Mind<span>fulness</span></a>
+            <!-- Login Btn -->
+            <!-- <button class="login" onclick="showModal()">Login</button> -->
+            <a href="#" class="login">Login</a>
+        </div>
+    </header>
+
+    <!-- login form  -->
+
+    <div class="overlay" onclick="closeModal()"></div>
+    <div class="loginform">
+        <span class="close">&times;</span>
+        <form action="">
+            <!-- <div>
+                <label for="">Username</label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">Password</label>
+                <input type="password">
+            </div> -->
+            <!-- <button>Login</button> -->
+
+            <div class="field input-field">
+                <input type="email" placeholder="Email" class="input">
+            </div>
+
+            <div class="field input-field">
+                <input type="password" placeholder="Password" class="password">
+                <i class="bx bx-hide eye-icon"></i>
+            </div>
+
+            <div class="field button-field">
+                <button>Login</button>
+            </div>   
+        </form>
+    </div>
+
+
+    <!-- Home -->
+    <section class="home" id="home">
+        <div class="home-text container">
+            <h2 class="home-title">Beyond The Blog</h2>
+            <span class="home-subtitle">Mindfulness is not making your mind go blank.</span>
+        </div>
+    </section>
+
+    <!-- Post Filter -->
+    <div class="post-filter container">
+        <span class="filter-item active-filter" data-filter="all">All </span>
+        <span class="filter-item" data-filter="mind">Mindfulness </span>
+        <span class="filter-item" data-filter="rel">Relationship & Love</span>
+        <span class="filter-item" data-filter="fit">Health & Fitness </span>
+    </div>
+
+    <!-- Posts -->
+    <section class="post container">
+        <!-- Post Box 1 -->
+        <div class="post-box fit">
+            <img src="img/post1.jpg" alt="" class="post-img">
+            <h2 class="category">Health & Fitness</h2>
+            <a href="post-page.html" class="post-title">
+                Are Artificial Sweeteners Healthy?
+            </a>
+            <span class="post-date">JULY 28, 2021</span>
+            <p class="post-description">Artificial sweeteners are in many food products, from ice cream to baked goods to your favorite coffee beverages. They’re popular because they provide an opportunity to enjoy sweet foods with less added sugar, and they do not contain calories. This may be useful to those with 
+                diabetes and individuals trying to reduce their sugar intake.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name"> KELLY HOGAN, MS, RD</span>
+            </div>
+        </div>
+
+        <!-- Post Box 2 -->
+        <div class="post-box rel">
+            <img src="img/post2.jpg" alt="" class="post-img">
+            <h2 class="category">Relationship & Love</h2>
+            <a href="post2.html" class="post-title">
+                The Truth About Expectations in Relationships
+            </a>
+            <span class="post-date">JAN 1, 2023</span>
+            <p class="post-description">By having high (but still realistic) standards, you are far more likely to achieve the kind of relationship you want.
+            </p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile2.jpg" alt="" class="profile-img">
+                <span class="profile-name">John Gottaman</span>
+            </div>
+        </div>
+
+        <!-- Post Box 3 -->
+        <div class="post-box fit">
+            <img src="img/post3.jpg" alt="" class="post-img">
+            <h2 class="category">Health & Fitness</h2>
+            <a href="post3.html" class="post-title">
+                Are You Eating Enough Protein?
+            </a>
+            <span class="post-date">JANUARY 10, 2023</span>
+            <p class="post-description">When you hear the term “protein intake,” 
+                you might just think about building muscle, but it’s much bigger than that.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name"> LISA FIELDS </span>
+            </div>
+        </div>
+
+        <!-- Post Box 4 -->
+        <div class="post-box mind">
+            <img src="img/post4.jpg" alt="" class="post-img">
+            <h2 class="category">Mindfulness</h2>
+            <a href="post4.html" class="post-title">
+                Managing Feelings During the Holidays
+            </a>
+            <span class="post-date">JAN 1, 2023</span>
+            <p class="post-description">The holiday season can bring up a lot of feelings and emotions, right?  Though holiday sentiment tends to be wrapped in merriment and cheer, it can often leave us feeling isolated, sad, and even resentful.</p>
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Michelle and Barb</span>
+            </div>
+        </div>
+
+        <!-- Post Box 5 -->
+        <div class="post-box rel">
+            <img src="img/post5.jpeg" alt="" class="post-img">
+            <h2 class="category">Relationship & Love</h2>
+            <a href="post5.html" class="post-title">
+                Modern Love Long Distance
+            </a>
+            <span class="post-date">MAY 29, 2020</span>
+            <p class="post-description">5 Solid Signs You Can Trust Someone You’re In A Long Distance Relationship With <br>
+                 Let’s not sugar-coat it: long-distance relationships suck. </p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile3.jpg" alt="" class="profile-img">
+                <span class="profile-name">Guest</span>
+            </div>
+        </div>
+
+        <!-- Post Box 6 -->
+        <div class="post-box fit">
+            <img src="img/post6.jpg" alt="" class="post-img">
+            <h2 class="category">Health & Fitness</h2>
+            <a href="post6.html" class="post-title">
+                10 Simple Changes That Lead to Weight Loss
+            </a>
+            <span class="post-date">JANUARY 2, 2023 </span>
+            <p class="post-description">Small, simple lifestyle changes, aka micro-goals, can boost your likelihood of losing weight and keeping it off for good.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name"> LAUREN KROUSE</span>
+            </div>
+        </div>
+
+        <!-- Post Box 7 -->
+        <div class="post-box mind">
+            <img src="img/post7.jpeg" alt="" class="post-img">
+            <h2 class="category">Mindfulness</h2>
+            <a href="post7.html" class="post-title">
+                6 Affirmations I’m Using in the New Year
+            </a>
+            <span class="post-date">JAN 1, 2023</span>
+            <p class="post-description">Happy New Year, dear friends!
+                <br>
+                I hope the start of 2023 has brought you a renewed feeling of optimism, hope, and peace.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MICHELLE MAROS</span>
+            </div>
+        </div>
+
+        <!-- Post Box 8 -->
+        <div class="post-box rel">
+            <img src="img/post8.jpeg" alt="" class="post-img">
+            <h2 class="category">Relationship & Love</h2>
+            <a href="post8.html" class="post-title">
+                3 Scriptures about Faithfulness to Inspire Your Marriage
+            </a>
+            <span class="post-date">Jan 12, 2023</span>
+            <p class="post-description">The vows we make to one another on our wedding day is a promise to be faithful to one another.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name">Amanda Idleman</span>
+            </div>
+        </div>
+
+        <!-- Post Box 9 -->
+        <div class="post-box mind">
+            <img src="img/post9.webp" alt="" class="post-img">
+            <h2 class="category">Mindfulness</h2>
+            <a href="post9.html" class="post-title">
+                The Importance of Self-Reflection
+            </a>
+            <span class="post-date">JAN 1, 2023</span>
+            <p class="post-description">Life can feel fast paced and at times, overwhelming, but as I’ve gotten older, I’ve grown fond of the periods of my life where I can pause, reflect, and recenter myself.</p>
+
+            <!-- Profile -->
+            <div class="profile">
+                <img src="img/profile1.jpg" alt="" class="profile-img">
+                <span class="profile-name">MICHELLE MAROS</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer container">
+        <p>&#169; Mindfulness All Right Reserved</p>
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+    </div>
+    
+    <!-- Jquery link -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.3.js"
+    integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+    crossorigin="anonymous"></script>
+    <!-- Link To JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
